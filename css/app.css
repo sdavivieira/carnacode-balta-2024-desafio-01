@@ -1,12 +1,147 @@
-.flex {
-    display: flex;
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+  box-sizing: border-box;
+  font-size: 16px;    
 }
 
-.flex-row {
-    flex-direction: row;
+h1 {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 600;
+  margin: 30px;
+} 
+
+main {
+  display: block;
+  margin: 0 auto !important;
+  
+  max-width: 380px;
 }
 
-.input-text {
-    background-color: #F6F6F6;
-    border: 2px solid #BDBDBD;
+#app {
+  background-color:  #2E1462;
+}
+
+.background-app {
+  margin: 0 auto;
+  background-color: #fff;
+
+  border-radius: 8px;
+
+  width: 343px;
+  height: 466px;
+}
+
+/*******************HISTORY********************/
+#history {
+  position: relative;
+  top: 150px; 
+}
+.history-content {
+  display: grid;
+  grid-template-areas: "A B";
+  gap: 10px;
+
+  padding: 20px;
+}
+
+.history-content h5 {
+  font-size: 16px;
+  font-weight: 600;
+}
+.history-content p {
+  font-size: 14px;  
+}
+
+.history-content .period {
+  color: #bdbdbd;
+}
+
+.history-image {
+  width: 50px;
+  height: 50px;
+  background-color: #f6f6f6;
+  border-radius: 8px;
+}
+
+.situation-header {
+  display: flex;
+  justify-content: space-between;
+
+  margin-bottom: 8px;
+}
+.sobrepeso {
+  color: #bdbdbd;
+}
+.situation-header-titulo{
+  font-weight: 600;  
+}
+
+/* ********LOGIN******** */
+
+.background-app {  
+  position: relative;
+  top: 120px;
+  margin: 0 auto;
+  background-color: #fff;
+
+  border-radius: 8px;
+
+  width: 343px;
+  height: 466px;  
+}
+
+.description p{  
+  display: block;
+  margin: 0 auto;
+  text-align: center;  
+  
+  width: 239px;
+ 
+  font-size: 16px;
+  margin-bottom: 16px; 
+}
+
+h5{
+  padding: 2rem  0 1rem 0;
+  font-size: 30px;
+  text-align: center;
+}
+
+.section-input input{
+  width: 313px;    
+}
+
+.section-btn button {
+  width: 311px;
+}
+
+.tela-inicial{  
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+
+  margin-top: 50vh;   
+}
+
+#account {
+  height: 558px;  
+}
+
+#remerber-login {
+  height: 393px;
+}
+
+#mensagem{
+  height: 295px;
+}
+
+@media (min-width: 768px) {
+  .container {
+    margin-top: 90px;
+  } 
+  
 }
